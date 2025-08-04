@@ -1,0 +1,97 @@
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #EDF2F4;
+  color: #333;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+input[type="text"], button {
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+#add-task-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#add-task-input {
+  /*flex-grow*/
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+#add-task-button {
+  padding: 10px 15px;
+  background-color: #2B2D42;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-task-button:hover {
+    background-color: #383d46;
+}
+
+
+#to-do-items-list section {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#to-do-items-list input[type="checkbox"] {
+  margin-right: 10px;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+#to-do-items-list label {
+  flex: 1;
+  font-size: 0.8rem;
+}
+
+
+.done-task {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.remove-task-btn {
+  background-color: #D90429;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.remove-task-btn:hover {
+  background-color: #EF233C;
+}
